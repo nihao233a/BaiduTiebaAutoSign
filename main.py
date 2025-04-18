@@ -184,7 +184,7 @@ def main():
         favorites = get_favorite(i)
         count = len(favorites)
         for idx,j in enumerate(favorites):
-            time.sleep(random.randint(1,5))
+            time.sleep(random.randint(2,5))
             client_sign(i, tbs, j["id"], j["name"],idx,count)
         logger.info("第" + str(n+1) + "个用户签到完成")
     logger.info("所有用户签到完成")
